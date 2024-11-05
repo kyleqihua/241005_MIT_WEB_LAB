@@ -14,7 +14,7 @@ export default async function StatementTable() {
 	console.log("Server Component: Data fetched");
 	return (
 		<section className="w-full mt-4 p-4 bg-yellow-400">
-			<div>Data loaded after 2 seconds</div>
+			<div>Data loaded after 5 seconds</div>
 			{statementHistory.map((itemData, key) => (
 				<StatementItem data={itemData} key={key} />
 			))}

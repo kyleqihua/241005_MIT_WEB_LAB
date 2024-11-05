@@ -12,7 +12,7 @@ export default function StatementItem({ data }) {
 		const timer = setTimeout(() => {
 			setIsReady(true);
 			console.log("Client Component: Initialization complete");
-		}, 5000);
+		}, 8000);
 
 		return () => clearTimeout(timer);
 	}, []);
@@ -31,7 +31,9 @@ export default function StatementItem({ data }) {
 			></input>
 			<p>{desc}</p>
 			<span>{date}</span>
-			{!isReady && <span className="text-xs">(Initializing...)</span>}
+			{!isReady && (
+				<span className="text-xs">(Initializing will take 8 seconds...)</span>
+			)}
 		</div>
 	);
 }
