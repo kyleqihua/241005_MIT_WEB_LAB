@@ -9,7 +9,7 @@ async function getStatementHistory() {
 export default async function StatementTable() {
 	const statementHistory = await getStatementHistory();
 	return (
-		<section className="w-full mt-4 p-4 bg-gray-900">
+		<section className="w-full mt-4 p-4 bg-yellow-400">
 			{statementHistory.map((itemData, key) => (
 				<StatementItem data={itemData} key={key} />
 			))}
